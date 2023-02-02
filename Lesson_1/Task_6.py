@@ -6,9 +6,10 @@
 first_result = float(input('Введите результат пробежки в первый день в км: '))
 desired_result = float(input('Введите желаемый результат в км: '))
 day = 1
+print(f'{day}-ый день: {round(first_result)}')
 while first_result < desired_result:
-    first_result = first_result * 1.1
-    day = day + 1
-print('Цель будет достигнута на', day, 'день')
+    first_result *= 1.1
+    day += 1
+    print(f'{day}-ый день: {first_result:.2f}')
 
-
+print(f'На {day}-ой день спортсмен достиг результата - не менее {round(first_result)} км')
