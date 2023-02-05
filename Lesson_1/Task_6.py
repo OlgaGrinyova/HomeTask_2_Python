@@ -13,3 +13,5 @@ while first_result < desired_result:
     print(f'{day}-ый день: {first_result:.2f}')
 
 print(f'На {day}-ой день спортсмен достиг результата - не менее {round(first_result)} км')
+
+
